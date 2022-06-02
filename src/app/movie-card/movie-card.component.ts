@@ -8,17 +8,17 @@ import { FetchApiDataService } from '../fetch-api-data.service'
 })
 
 export class MovieCardComponent implements OnInit{
+  //user: any = localStorage.getItem('user');
   movies: any[] = [];
 
-
-constructor(public fetchMovies:FetchApiDataService){}
+constructor(public fetchApiData:FetchApiDataService){}
 
 ngOnInit(): void {
   this.getMovies();
 }
 
 getMovies(): void {
-  this.fetchMovies.getAllMovies().subscribe((resp: any) => {
+  this.fetchApiData.getAllMovies().subscribe((resp: any) => {
       this.movies = resp;
       console.log(this.movies);
       return this.movies;

@@ -29,11 +29,11 @@ export class UserLoginFormComponent implements OnInit {
   }
 // This is the function responsible for sending the form inputs to the backend
 loginUser(): void {
-    this.fetchApiData.userLogin(this.userData).subscribe((response:{ token: string; user: { Username: string; }; }) => {
+    this.fetchApiData.userLogin(this.userData).subscribe((result:{ token: string; user: { Username: string; }; }) => {
 this.dialogRef.close();
-console.log(response);
- localStorage.setItem('token', response.token);
-      localStorage.setItem('username', response.user.Username);
+console.log(result);
+ localStorage.setItem('token', result.token);
+      localStorage.setItem('user', result.user.Username);
       this.snackBar.open('User login succcesful!', 'OK',{
         duration:2000
       });
@@ -44,5 +44,8 @@ console.log(response);
         duration: 2000
       });
     });
+  }
+    closeDialog(): void {
+    this.dialogRef.close();
   }
 }

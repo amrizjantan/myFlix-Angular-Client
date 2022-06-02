@@ -11,9 +11,9 @@ import { map } from 'rxjs/operators';
 // Declaring the api url that will provide data for the cleint app
 const apiUrl = 'https://amrizflix.herokuapp.com';
 // Get token from localStorage
-const token = localStorage.getItem('token');
+//const token = localStorage.getItem('token');
 // Get username from localStorage for endpoints
-const username = localStorage.getItem('user');
+//const username = localStorage.getItem('user');
 
 @Injectable({
   providedIn: 'root',
@@ -176,6 +176,6 @@ export class FetchApiDataService  {
         `Error Status code ${error.status}, ` + `Error body is: ${error.error}`
       );
     }
-    return throwError('Something bad happened; please try again later.');
+    return throwError('Something wrong happened; please try again later.');
   }
 }
