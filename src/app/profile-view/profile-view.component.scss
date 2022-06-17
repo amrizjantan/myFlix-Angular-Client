@@ -1,0 +1,123 @@
+$backgroundColor:#4203ad;
+$cardColor: #c4f5f4;
+$textColor: #191919;
+
+
+.user-profile-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: $backgroundColor;
+}
+
+.user-profile-card {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: $cardColor;
+}
+
+.user-profile-card-header {
+  margin-bottom: 20px;
+  color: $textColor;
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-card-content {
+  color: $textColor;
+}
+
+.mat-card>.mat-card-actions:last-child {
+  margin-bottom: -8px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorite-movies-header {
+  color: $textColor;
+  margin-top: 25px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.favorite-movies-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite-movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: $cardColor;
+  max-width: 280px;
+  width: 50%;
+  height: 70%;
+  margin: 15px;
+  padding: 20px 3px;
+}
+
+.favorite-images {
+  height: 60%;
+}
+
+.favorite-movies-title-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  color: $textColor;
+}
+
+.favorite-movies-title {
+  display: flex;
+  max-width: 210px;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+  color: $textColor;
+}
+
+.mat-card-favorite-movies {
+  color: $cardColor;
+}
+
+.mat-card-subtitle {
+  color: $textColor;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.director-button {
+  padding: 5px;
+  margin: 0;
+  line-height: 0;
+  max-height: 20px;
+}
+
+.mat-icon-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.genre-button {
+  background-color: $backgroundColor;
+}
+
+.synopsis-button {
+  background-color: $backgroundColor;
+}

@@ -1,0 +1,55 @@
+$backgroundColor: #b804cc;;
+$cardColor: #c4f5f4;
+$textColor: #191919;
+
+
+.welcome-page-button {
+  background-color: $backgroundColor;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.main-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-page-card {
+  display: flex;
+  padding: 30px;
+  width: 300px;
+  flex-direction: column;
+  
+  background-color: $cardColor;
+}
+
+.welcome-page-card>mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-page-header {
+  margin-bottom: 10px;
+  color: $textColor;
+}
+
+.mat-card>.mat-card-actions {
+  color: $backgroundColor;
+}
+
+.mat-card>.mat-card-actions:last-child {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+}

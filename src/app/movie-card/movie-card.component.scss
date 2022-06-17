@@ -1,0 +1,78 @@
+$backgroundColor: #4203ad;
+$cardColor: #c4f5f4;
+$textColor: #191919;
+$likeColor: #f0071b;
+
+
+.movie-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: $backgroundColor;
+
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ 
+  background-color: $cardColor;
+  max-width: 260px;
+  margin: 15px;
+  padding: 20px 3px;
+}
+
+mat-card-header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.movies-title {
+  display: flex;
+  max-width: 210px;
+  justify-content: center;
+  text-align: center;
+  color: $textColor;
+}
+
+.director-button {
+  padding: 5px;
+  margin: 0;
+  line-height: 0;
+  max-height: 20px;
+}
+
+img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.mat-icon-button {
+  
+  position: absolute;
+  left: 25px;
+  top: 5px;
+}
+
+.genre-button {
+  position: relative;
+  left: 5px;
+}
+
+.synopsis-button {
+  background-color: $cardColor;
+  color: $textColor;
+  margin: 10px;
+}
+
+.favorite-button {
+//color: $likeColor;
+}
