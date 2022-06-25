@@ -30,6 +30,10 @@ ngOnInit(): void {
 }
 
 // This is the function responsible for sending the form inputs to the backend
+/**
+   * Sends data from userData form to API for registration then closes registration dialog.
+   * @returns snackbar message confirmation
+   */
 registerUser(): void {
     this.fetchApiData.userRegistration(this.userData).subscribe((response) => {
   // Logic for a successful user registration goes here! (To be implemented)
@@ -40,6 +44,7 @@ registerUser(): void {
      });
      
     }, (response) => {
+      //error response
     console.log(response);
       this.snackBar.open(response, 'OK', {
         duration: 2000

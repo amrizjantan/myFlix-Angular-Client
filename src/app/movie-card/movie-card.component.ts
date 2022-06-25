@@ -117,24 +117,7 @@ console.log(id);
     });
   }
 
- 
- /**
-   * use API end-point to add a movie to user's favorites
-   * */
-// addFavoriteMovies(id: string, Title: string): void {
- // console.log(id);
- //this.fetchApiData.addFavoriteMovies(id).subscribe((result) => {
-   //this.snackBar.open(`Successfully added ${Title} to favorite movies.`, 'OK', {
-   //     duration: 4000,
-  //      verticalPosition: 'top'
-  //    })
-  //console.log(result);
-  //   this.ngOnInit();
-  // })
- // }
 
-
- 
     /**
    * user API end-point to remove a movie from user's favorites
    * @function deleteFavoriteMovies
