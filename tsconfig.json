@@ -34,7 +34,7 @@
       "src/app/movie-card/movie-card.component.ts",
       "src/app/director-card/director-card.component.ts",
       "src/app/genre-card/genre-card.component.ts",
-      "src/app/synopsis-view/synopsis-view.component.ts",
+      "src/app/synopsis/synopsis.component.ts",
       "src/app/profile-view/profile-view.component.ts",
       "src/app/user-login-form/user-login-form.component.ts",
       "src/app/user-registration-form/user-registration-form.component.ts",
